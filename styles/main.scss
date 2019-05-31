@@ -1,0 +1,57 @@
+@import "config";
+@import "resume";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font: {
+    size: 16px;
+    family: $font-family;
+  }
+  background: $body-color;
+  color: $font-color;
+  line-height: normal;
+}
+
+section {
+  border-bottom: $line;
+  margin-bottom: 1rem;
+  &:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  &:hover {
+    color: darken($link-color, 10%);
+  }
+}
+
+h1 {
+  font-size: 46px;
+}
+h2 {
+  font-size: 23px;
+}
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+p,
+ul {
+  line-height: 1.5;
+}
+
+img {
+  width: 142px;
+  height: auto;
+  align-self: center;
+  margin-right: 1.25rem;
+}

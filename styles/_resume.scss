@@ -1,0 +1,83 @@
+/**********************
+Name, title, description
+**********************/
+
+.header {
+  @include grid(20px, 3fr 1fr);
+}
+
+.image-and-title {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.name-title {
+  display: block;
+}
+
+.main-left {
+  p {
+    padding: 1rem 0;
+  }
+}
+
+/**********************
+Links, addresses, icons
+**********************/
+
+.main-right {
+  display: flex;
+}
+
+.icons {
+  margin-right: 1.25rem;
+  padding-bottom: 0.5rem;
+}
+
+/**********************
+Coding projects, etc.
+Grid mixin in _config.scss
+**********************/
+
+.demo-code {
+  font-style: italic;
+}
+
+.projects-tech {
+  @include grid(20px, 1fr 1fr);
+  p,
+  h2 {
+    padding-bottom: 1rem;
+  }
+}
+
+/**********************
+Professional experience
+**********************/
+
+.experience {
+  @include grid(20px, 1fr 1fr);
+  p,
+  h2 {
+    padding-bottom: 1rem;
+  }
+}
+
+/**********************
+Other info like education, languages, hobbies
+**********************/
+.footer {
+  @include grid(40px, 1fr 1fr 1fr);
+  h2,
+  p,
+  ul {
+    padding-bottom: 1rem;
+  }
+}
+
+.hobby-icons {
+  i {
+    font-size: 30px;
+    padding: 8px;
+  }
+}

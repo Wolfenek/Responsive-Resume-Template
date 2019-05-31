@@ -1,0 +1,31 @@
+$primary-color: white;
+$body-color: #f2f2f2;
+$font-color: #323232;
+$title-color: #009999;
+$link-color: steelblue;
+$max-width: 960px;
+$font-family: "Source Sans Pro", sans-serif;
+$line: 1px solid grey;
+
+//Responsive grid
+@mixin grid($gap, $args...) {
+  display: grid;
+  grid-template-columns: 1fr;
+  @media (min-width: 700px) {
+    grid-column-gap: $gap;
+    grid-template-columns: $args;
+  }
+}
+
+.container {
+  max-width: $max-width;
+  background: $primary-color;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 32px;
+  margin: 40px auto;
+}
+
+.highlight {
+  color: $title-color;
+  font-weight: 400;
+}
